@@ -1,0 +1,11 @@
+sort1 uses: Bubble Sort
+
+How do you know?: It sorts instantaneously the lists of integers that were already sorted.
+
+sort2 uses: Merge Sort
+
+How do you know?: It has had the best performance overall in all tests, but the ones with the previously sorted lists.
+
+sort3 uses: Selection Sort
+
+How do you know?: It's had the worst performance in all tests.
