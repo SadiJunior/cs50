@@ -6,7 +6,7 @@ It's also available on [edX](https://www.edx.org/course/introduction-computer-sc
 
 I will be adding all the activities done througout the CS50 course to this repository.
 
-The course is divided in 10 weeks, each one focusing on a different computation knowledge:
+The course is divided in 10 weeks, each one focusing on a different computation skill:
 
 0. Week 0: Introduction and Scratch
 1. Week 1: C
@@ -16,12 +16,11 @@ The course is divided in 10 weeks, each one focusing on a different computation 
 5. Week 5: Data Structures
 6. Week 6: Python
 7. Week 7: SQL
-8. Week 8: HTML, CSS and JavaScript
+8. Week 8: HTML, CSS & JavaScript
 9. Week 9: Flask
 10. Week 10: Emoji
 
-Actually, Harvard University has a series of CS50 courses, that get into speficic areas of Computer Science.\
-All CS50 courses from Harvard University:
+In fact, Harvard University has a series of CS50 courses, which address specific areas of Computer Science.\
 
 - [CS50](https://cs50.harvard.edu/x/2023/)
 - [CS50 Python](https://cs50.harvard.edu/python/2022/)
