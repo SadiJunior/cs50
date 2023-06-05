@@ -1,0 +1,5 @@
+If songs.db contains the top 100 songs of one listener from 2018, how would you characterize their audio aura?
+R: By getting the average of the danceability, energy, loudness, speechiness and valence columns, and aplying some sort of algorithm that would get the audio aurea from this data.
+
+Hypothesize about why the way you’ve calculated this aura might not be very representative of the listener. What better ways of calculating this aura would you propose?
+R: Arguably, songs have much more complex feelings embeded in them, and if we keep on finding characteristics, we would have to add a lot of complexity to our databases and algorithms.
