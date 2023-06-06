@@ -20,7 +20,7 @@ The course is divided in 10 weeks, each one focusing on a different computation 
 9. Week 9: Flask
 10. Week 10: Emoji
 
-In fact, Harvard University has a series of CS50 courses, which address specific areas of Computer Science.\
+In fact, Harvard University has a series of CS50 courses, which address specific areas of Computer Science:
 
 - [CS50](https://cs50.harvard.edu/x/2023/)
 - [CS50 Python](https://cs50.harvard.edu/python/2022/)
