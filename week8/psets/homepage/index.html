@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+        <link rel="stylesheet" href="styles.css">
+
+        <link rel="icon" href="images/code-icon.ico">
+
+        <title>Portfolio | Sadi</title>
+    </head>
+
+    <body>
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-background navbar-expand-lg navbar-dark fixed-top">
+            <div class="container flex-lg-column text-lg-center">
+                <a class="navbar-brand mx-lg-auto mb-lg-4" href="#">
+                    <img class="d-none d-lg-block rounded-circle img-border" src="images/profile.jpg" alt="Profile picture">
+                    <span class="h3 m-0 align-middle fw-bold flex-column d-block d-lg-none">Sadi Junior</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto flex-lg-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#career">Career</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Navbar End -->
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" data-bs-spy="scroll" data-bs-target=".navbar">
+
+            <!-- Home Page -->
+            <section id="home" class="full-height mx-3 mx-lg-5">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div>
+                            <div class="mb-5 mb-lg-5">
+                                <h1 class="display-2 fw-bold" data-aos="fade-up">Hello!</h1>
+                                <h1 class="display-1 fw-bold" data-aos="fade-up" data-aos-delay="200">My name is Sadi</h1>
+                                <h1 class="display-4 fw-bold" data-aos="fade-up" data-aos-delay="300">I am a <span class="auto-type"></span></h1>
+                            </div>
+                            <div data-aos="fade-up" data-aos-delay="500">
+                                <a href="#about" class="btn btn-brand me-3">Get to know me!</a>
+                                <a href="#contact" class="custom-link">Let's connect!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Home Page End -->
+
+            <!-- About Page -->
+            <section id="about" class="full-height mx-3 mx-lg-5" style="overflow-x: hidden;">
+                <div class="container-fluid">
+                    <div class="row mb-5 mb-lg-5">
+                        <div class="col-lg-3 order-1 align-self-center" data-aos="fade-right">
+                            <img class="rounded-circle img-border" src="images/me.jpg" alt="Profile picture">
+                        </div>
+                        <div class="col-lg-9 order-2 align-self-center" data-aos="fade-right" data-aos-delay="200">
+                            <div class="mx-lg-5">
+                                <div class="row">
+                                    <h1 class="display-1 fw-bold h-highlighted">Me</h1>
+                                </div>
+                                <div class="row">
+                                    <p>I am a 20 year boy who lives in Brazil.</p>
+                                    <p>I like to create things, especially if programming or art are involved.</p>
+                                    <p>I currently work as a <a href="https://dotnet.microsoft.com/en-us/" target="_blank">C# | .NET developer</a> at <a href="https://www.altus.com.br/en/" target="_blank">Altus</a>, working on a software used in engineering projects all over the globe.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-5 mb-lg-5">
+                        <div class="col-lg-3 order-1 order-lg-2 align-self-center" data-aos="fade-left">
+                            <img class="rounded-circle img-border" src="images/graduation.jpg" alt="Graduation picture">
+                        </div>
+                        <div class="col-lg-9 order-2 order-lg-1 align-self-center" data-aos="fade-left" data-aos-delay="200">
+                            <div class="mx-lg-5 text-end">
+                                <div class="row mt-3 mt-lg-5">
+                                    <h1 class="display-1 fw-bold h-highlighted">Education</h1>
+                                </div>
+                                <div class="row">
+                                    <p>After studying robotics in my youth, I decided I wanted to delve deeper into technology.
+                                    <p>Since then, I’ve graduated in Electronics at <a href="https://www.liberato.com.br/eletronica/" target="_blank">Fundação Liberato</a>, and I’m currently majoring in Computer Science at <a href="https://www.unisinos.br/graduacao/ciencia-da-computacao/hibrido" target="_blank">Unisinos</a>.</p>
+                                    <p>I've also graduated in English at <a href="https://www.institutoivoti.com.br/cursos-de-idiomas/ingles" target="_blank">Instituto Ivoti</a>, reaching <a href="https://www.cambridgeenglish.org/exams-and-tests/advanced/" target="_blank">C1 Advanced</a> level, certified by Cambridge University.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="row mb-5 mb-lg-5">
+                        <div class="col-lg-3 order-1 align-self-center" data-aos="fade-right">
+                            <img class="rounded-circle img-border" src="images/piano.jpg" alt="Piano picture">
+                        </div>
+                        <div class="col-lg-9 order-2 align-self-center" data-aos="fade-right" data-aos-delay="200">
+                            <div class="mx-lg-5 mt-lg-5">
+                                <div class="row">
+                                    <h1 class="display-1 fw-bold h-highlighted">Art</h1>
+                                </div>
+                                <div class="row">
+                                    <p>I’m amazed by artistical creation, especially music and literature.</p>
+                                    <p>I play piano and guitar, and I'm passionate about instrumental music.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-5 mb-lg-5">
+                        <div class="col-lg-3 order-1 order-lg-2 align-self-center" data-aos="fade-left">
+                            <img class="rounded-circle img-border" src="images/dog.jpg" alt="Dog picture">
+                        </div>
+                        <div class="col-lg-9 order-2 order-lg-1 align-self-center" data-aos="fade-left" data-aos-delay="200">
+                            <div class="mx-lg-5 text-end">
+                                <div class="row mt-3 mt-lg-5">
+                                    <h1 class="display-1 fw-bold h-highlighted">Social</h1>
+                                </div>
+                                <div class="row">
+                                    <p>Whenever possible, I like spending time with family and friends (and with my dog, <a href="#" id="open-sugar-image">Sugar</a>).</p>
+                                    <p>I'm constantly looking forward to making new friends, so please don't hesitate to <a href="#contact">reach out</a>!</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Modal Sugar Image -->
+                        <div class="modal-image" id="sugar-modal-image">
+                            <span class="mt-5 mt-lg-0 close-button" id="close-button">&times;</span>
+                            <img class="rounded-circle img-border" src="images/sugar.jpg" alt="Sugar picture">
+                        </div>
+                        <!-- Modal Sugar Image End -->
+
+                    </div>
+                </div>
+            </section>
+            <!-- About Page End  -->
+
+            <!-- Career Page -->
+            <section id="career" class="full-height mx-3 mx-lg-5">
+                <div class="container-fluid">
+                    <div class="row pb-4" data-aos="fade-up">
+                        <div class="col-lg-8">
+                            <h4 class="h-highlighted">CAREER</h4>
+                            <h1>My Education & Experience</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 g-4 pe-3">
+                            <h2 class="pb-2 pb-lg-4" data-aos="fade-up" data-aos-delay="100">Education</h2>
+                            <div class="timeline pe-lg-5" data-aos="fade-up" data-aos-delay="200">
+                                <div class="row py-3" data-aos="fade-up" data-aos-delay="300">
+                                    <div class="timeline-item bg-base rounded-4 p-4 pb-2 shadow-effect" >
+                                        <div class="pb-3">
+                                            <h4>English Language Course</h4>
+                                            <h5 class="h-highlighted mb-1">Instituto Ivoti</h5>
+                                            <p class="h-highlighted mb-0">Feb 2012 - Dec 2020</p>
+                                        </div>
+                                        <p>My English language journey began in my childhood, back in 2012, at <a href="https://www.institutoivoti.com.br/cursos-de-idiomas/ingles" target="_blank">Instituto Ivoti</a>.</p>
+                                        <p>Ever since I got my first Cambridge English Qualification in 2013, I've been continuously evolving my English proficiency, ultimately achieving <a href="https://www.cambridgeenglish.org/exams-and-tests/advanced/" target="_blank">C1 Advanced</a> qualification in 2020.</p>
+                                    </div>
+                                </div>
+                                <div class="row pb-3" data-aos="fade-up" data-aos-delay="400">
+                                    <div class="timeline-item bg-base rounded-4 p-4 pb-2 shadow-effect" >
+                                        <div class="pb-3">
+                                            <h4>Electronics Technical Course</h4>
+                                            <h5 class="h-highlighted mb-1">Fundação Liberato</h5>
+                                            <p class="h-highlighted mb-0">Feb 2018 - Oct 2022</p>
+                                        </div>
+                                        <p>After finishing elementary school, I was accepted at Fundação Liberato on the <a href="https://www.liberato.com.br/eletronica/" target="_blank">Electronics Technical Course</a> integrated to High School. Unlike a regular High School, the Technical Course takes four years and a mandatory internship to be completed.</p>
+                                        <p>During those four years, we went through transistors, logic gates, processors, microcontrollers, programming, and much more.</p>
+                                    </div>
+                                </div>
+                                <div class="row pb-3" data-aos="fade-up" data-aos-delay="500">
+                                    <div class="timeline-item bg-base rounded-4 p-4 pb-2 shadow-effect" >
+                                        <div class="pb-3">
+                                            <h4>Computer Science</h4>
+                                            <h5 class="h-highlighted mb-1">Unisinos</h5>
+                                            <p class="h-highlighted mb-0">Feb 2023 - Expected Graduation: Oct 2027</p>
+                                        </div>
+                                        <p>Already with a solid knowledge on the fundamentals of logic and computation, I've started a Computer Science bachelor's degree at <a href="https://www.unisinos.br/graduacao/ciencia-da-computacao/hibrido" target="_blank">Unisinos</a>.</p>
+                                        <p>In the coming years, I'm looking forward to expanding my knowledge, especially in new technologies such as AI and Cloud Development, and meeting new people.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 g-4 pe-3">
+                            <h2 class="pb-2 pb-lg-4" data-aos="fade-up" data-aos-delay="700">Experience</h2>
+                            <div class="timeline" data-aos="fade-up" data-aos-delay="800">
+                                <div class="row py-3" data-aos="fade-up" data-aos-delay="900">
+                                    <div class="timeline-item bg-base rounded-4 p-4 pb-2 shadow-effect" >
+                                        <div class="pb-3">
+                                            <h1>Altus Automation Systems</h1>
+                                            <h4 class="h-highlighted mb-0">Dec 2021 - Present</h4>
+                                        </div>
+                                        <p>Altus is a company that keeps the world running by providing Industrial Automation solutions for companies all over the globe. With clients such as Petrobras, Gerdau, Braskem, ABB and Yara, Altus is a leading automation company in Brazil.</p>
+                                        <p>In the development of engineering projects, such as oil platforms and power plants, a robust Desktop application is needed. My work primarily revolved around this application, which was developed using C#, .NET, XML, WinForms and WPF. </p>
+                                        <hr class="my-4">
+                                        <div class="pb-3">
+                                            <h4>C# Development Intern</h4>
+                                            <p class="h-highlighted mb-0">Dec 2021 - Oct 2022</p>
+                                        </div>
+                                        <p>Worked on C# code maintenance and refactoring, participating in daily meetings with a Senior developer.</p>
+                                        <p>Learned about code documentation, version control and the significance of code readability and maintainability.</p>
+                                        <hr class="my-4">
+                                        <div class="pb-3">
+                                            <h4>Assistant C# Developer</h4>
+                                            <p class="h-highlighted mb-0">Oct 2022 - Jul 2023</p>
+                                        </div>
+                                        <p>Worked on complex refactorings of features used by comanies such as Petrobras, Light S.A and Sabesp.</p>
+                                        <p>Studied and applied <a href="https://medium.com/backticks-tildes/the-s-o-l-i-d-principles-in-pictures-b34ce2f1e898" target="_blank">SOLID Principles</a> and <a href="https://refactoring.guru/design-patterns" target="_blank">Design Patterns</a> in real-world projects.</p>
+                                        <p>Developed a software solution from scratch for Beijer Electronics, a Swedish customer. I was responsible not only for the development, but also for engaging directly with the client, aligning spectations and sorting out technical issues.</p>
+                                        <hr class="my-4">
+                                        <div class="pb-3">
+                                            <h4>Junior C# Developer</h4>
+                                            <p class="h-highlighted mb-0">Jul 2023 - Present</p>
+                                        </div>
+                                        <p>Was assigned as one of the main developers of new features for Beijer Electronics.</p>
+                                        <p>Selected and delegated tasks to entry level developers.</p>
+                                        <p>Started reviewing code, ensuring the quality of our deliveries.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Career Page End -->
+
+            <!-- Projects Page -->
+            <section id="projects" class="full-height mx-3 mx-lg-5">
+                <div class="container-fluid">
+                    <div class="row pb-4" data-aos="fade-up">
+                        <div class="col-lg-8">
+                            <h4 class="h-highlighted">PROJECTS</h4>
+                            <h1>My Recent Projects</h1>
+                        </div>
+                    </div>
+                    <div class="row g-4">
+                        <div class="col-lg-6 col-xxl-4 d-flex" data-aos="fade-up" data-aos-delay="100">
+                            <div class="custom-card bg-base rounded-4 shadow-effect flex-column align-items-stretch">
+                                <div class="custom-card-image rounded-4">
+                                    <img class="rounded-4" src="images/cs50.jpg" alt="CS50 picture">
+                                </div>
+                                <div class="p-4">
+                                    <h3>CS50</h3>
+                                    <p>Harvard University offers an introductory Computer Science course called <a href="https://cs50.harvard.edu/x/" target="_blank">CS50</a>.</p>
+                                    <p>In 2023, I've been attending to the online classes, and I've uploaded the activities done throughout the course to my GitHub.</p>
+                                    <a href="https://github.com/SadiJunior/cs50" class="custom-link" target="_blank">Go to GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-xxl-4 d-flex" data-aos="fade-up" data-aos-delay="300">
+                            <div class="custom-card bg-base rounded-4 shadow-effect flex-column align-items-stretch">
+                                <div class="custom-card-image rounded-4">
+                                    <img class="rounded-4" src="images/cs-unisinos.jpg" alt="CS Unisinos image">
+                                </div>
+                                <div class="p-4">
+                                    <h3>CS - Unisinos</h3>
+                                    <p>I'm currently enrolled in a bachelor's degree in Computer Science at Unisinos.</p>
+                                    <p>I'm constantly uploading the projects related to programming completed during the course to my GitHub.</p>
+                                    <a href="https://github.com/SadiJunior/cs-unisinos" class="custom-link" target="_blank">Go to GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-xxl-4 d-flex" data-aos="fade-up" data-aos-delay="500">
+                            <div class="custom-card bg-base rounded-4 shadow-effect flex-column align-items-stretch">
+                                <div class="custom-card-image rounded-4">
+                                    <img class="rounded-4" src="images/portfolio.jpg" alt="Portfolio website image">
+                                </div>
+                                <div class="p-4">
+                                    <h3>Portfolio Website</h3>
+                                    <p>One of the projects in <a href="https://cs50.harvard.edu/x/2023/weeks/8/" target="_blank">CS50's 8th week</a> was to create a simple webpage about myself.</p>
+                                    <p>After doing the initial pages, I realized this could be developed into a Portfolio Website. And so it was.</p>
+                                    <a href="https://github.com/SadiJunior/personal-website" class="custom-link" target="_blank">Go to GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Projects Page End -->
+
+            <!-- Contact Page -->
+            <section id="contact" class="full-height mx-3 mx-lg-5">
+                <div class="container-fluid justify-content-center text-center">
+                    <div class="row pb-3" data-aos="fade-up">
+                        <div class="col">
+                            <h4 class="h-highlighted">CONTACT</h4>
+                            <h1>Get in touch</h1>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center text-center pb-5">
+                        <div class="social-icons" data-aos="fade-up" data-aos-delay="100">
+                            <a class="col-4 col-lg-2 m-1" href="https://www.linkedin.com/in/sadijunior/" target="_blank">
+                                <i class="lab la-linkedin"></i>
+                            </a>
+                            <a class="col-4 col-lg-2 m-1" href="https://github.com/SadiJunior" target="_blank">
+                                <i class="lab la-github"></i>
+                            </a>
+                            <a class="col-4 col-lg-2 m-1" href="https://www.instagram.com/sadijunior_/" target="_blank">
+                                <i class="lab la-instagram"></i>
+                            </a>
+                            <a class="col-4 col-lg-2 m-1" href="https://open.spotify.com/user/12151565131" target="_blank">
+                                <i class="lab la-spotify"></i>
+                            </a>
+                            <a class="col-4 col-lg-2 m-1" href="https://www.hackerrank.com/SadiJunior/" target="_blank">
+                                <i class="lab la-hackerrank"></i>
+                            </a>
+                            <a class="col-4 col-lg-2" href="https://api.whatsapp.com/send/?phone=5551997665033&text=👋" target="_blank">
+                                <i class="lab la-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center text-center pb-4">
+                        <div class="col-11 col-md-10 col-xxl-7" data-aos="fade-up" data-aos-delay="300">
+                            <form action="https://formsubmit.co/899f51efa4747295d15a1e72cf5c5d31" method="POST" class="row g-lg-3 gy-3">
+                                <div class="form-group col-md-6">
+                                    <input type="text" name="name" class="form-control" placeholder="Name" required>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <input type="email" name="email" class="form-control" placeholder="Email" required>
+                                </div>
+                                <div class="form-group col-12">
+                                    <textarea name="message" rows="5" class="form-control" placeholder="Message" required></textarea>
+                                </div>
+                                <div class="form-group col-12 d-grid">
+                                    <button type="submit" class="btn btn-brand">Send</button>
+                                </div>
+
+                                <!-- FormSubmit Config -->
+                                <input type="hidden" name="_captcha" value="false">
+                                <input type="hidden" name="_subject" value="Portfolio Website - New email">
+                                <input type="hidden" name="_next" value="https://sadijunior.github.io/personal-website/thanks"> 
+                                <!-- FormSubmit Config End -->
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Contact Page End -->
+
+            <!-- Footer -->
+            <footer class="py-4 px-3 px-lg-5">
+                <div class="container-fluid">
+                    <div class="row gy-4 justify-content-between">
+                        <div class="col-auto">
+                            <h5>© Sadi Junior</h5>
+                        </div>
+                        <div class="col-auto">
+                            <h5>2023</h5>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- Footer End -->
+
+        </div>
+        <!-- Content Wrapper End -->
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+        <script src="site.js"></script>
+    </body>
+
+</html>

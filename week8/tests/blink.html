@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <script>
+
+            // Toggles the visibility of body
+            function blink()
+            {
+                let body = document.querySelector("body");
+
+                if (body.style.visibility == "hidden")
+                {
+                    body.style.visibility = "visible";
+                }
+                else
+                {
+                    body.style.visibility = "hidden";
+                }
+            }
+
+            // Runs the blink function every 500 ms (0.5 second)
+            window.setInterval(blink, 500);
+
+        </script>
+        <title>blink</title>
+    </head>
+    <body>
+        <p>Hello, World!</p>
+    </body>
+</html>
