@@ -1,0 +1,74 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    User
+{% endblock %}
+
+{% block main %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-6 g-4 pe-3">
+                <div class="card rounded-4">
+                    <div class="card-body">
+                        <h3 class="card-title">Deposit cash</h3>
+
+                        <hr>
+
+                        <div class="mb-5">
+                            <p>Current cash: <span>{{ user_data["cash"] | usd }}</span></p>
+                        </div>
+                        <form action="/user/deposit" method="post">
+                            <div class="mb-3">
+                                <input autocomplete="off" required min="1" max="{{ max_deposit }}" step="any" autofocus class="form-control mx-auto w-auto" name="amount" placeholder="Amout" type="number">
+                            </div>
+
+                            <hr>
+
+                            <button class="btn btn-primary" type="submit">Deposit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 g-4 pe-3">
+                <div class="card rounded-4">
+                    <div class="card-body">
+                        <h3 class="card-title mb-3">Update user data</h3>
+
+                        <hr>
+
+                        <form action="/user/update" method="post">
+                            <div class="row">
+                                <h5 class="mb-3">Username</h5>
+                                <div>
+                                    <p>Current username: <span>{{ user_data["username"] }}</span></p>
+                                </div>
+                                <div class="mb-3">
+                                    <input autocomplete="off" autofocus class="form-control mx-auto w-auto" name="new_username" placeholder="New username" type="text">
+                                </div>
+                            </div>
+
+                            <hr>
+
+                            <div class="row">
+                                <h5 class="mb-3">Password</h5>
+                                <div class="mb-3">
+                                    <input class="form-control mx-auto w-auto" name="current_password" placeholder="Current password" type="password">
+                                </div>
+                                <div class="mb-3">
+                                    <input class="form-control mx-auto w-auto" name="new_password" placeholder="New password" type="password">
+                                </div>
+                                <div class="mb-3">
+                                    <input class="form-control mx-auto w-auto" name="confirmation" placeholder="Password confirmation" type="password">
+                                </div>
+                            </div>
+
+                            <hr>
+
+                            <button class="btn btn-primary" type="submit">Save</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

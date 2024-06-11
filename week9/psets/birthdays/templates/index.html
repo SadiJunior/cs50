@@ -1,0 +1,59 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<div class="header">
+    <h1>Birthdays</h1>
+</div>
+<div class="container">
+    <div class="section">
+
+        <h2>Add a Birthday</h2>
+
+        <form action="/" method="post">
+            <input type="text" required autocomplete="off" name="name" placeholder="Name">
+            <input type="number" min="1" max="12" required autocomplete="off" name="month" placeholder="Month">
+            <input type="number" min="1" max="31" required autocomplete="off" name="day" placeholder="Day">
+            <button type="submit">Add Birthday</button>
+        </form>
+
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                <div class="flashes">
+                    {% for message in messages %}
+                        <p>{{ message }}</p>
+                    {% endfor %}
+                </div>
+            {% endif %}
+        {% endwith %}
+
+    <div class="section">
+
+        <h2>All Birthdays</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Birthday</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for birthday in birthdays %}
+                    <tr>
+                        <td>{{ birthday["name"] }}</td>
+                        <td>{{ birthday.month}}/{{birthday.day }}</td>
+                        <td>
+                            <form action="/delete" method="post">
+                                <!-- This is a bug -->
+                                <!-- User can modify the id and delete anything -->
+                                <input name="id" type="hidden" value="{{ birthday.id }}">
+                                <button class="error-button" type="submit">Delete</button>
+                            </form>
+                        </td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,56 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    History
+{% endblock %}
+
+{% block main %}
+
+    <table class="table table-sm">
+        <thead>
+            <tr>
+                <th scope="col">Operation</th>
+                <th scope="col">Symbol</th>
+                <th scope="col">Shares</th>
+                <th scope="col">Share price</th>
+                <th scope="col">Transaction</th>
+                <th scope="col">Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for transaction in transactions %}
+                <tr>
+                    <td>{{ transaction.operation | upper }}</td>
+                    <td>
+                        {% if transaction.symbol %}
+                            {{ transaction.symbol }}
+                        {% else %}
+                            -
+                        {% endif %}
+                    </td>
+                    <td>
+                        {% if transaction.symbol %}
+                            {{ transaction.shares }}
+                        {% else %}
+                            -
+                        {% endif %}
+                    </td>
+                    <td>
+                        {% if transaction.symbol %}
+                            {{ transaction.price | usd }}
+                        {% else %}
+                            -
+                        {% endif %}
+                    </td>
+                        {% if transaction.operation == "buy" %}
+                            <td style="color: red">-{{ transaction.transaction_cash | usd}}</td>
+                        {% else %}
+                            <td style="color: green">+{{ transaction.transaction_cash | usd}}</td>
+                        {% endif %}
+                    <td>{{ transaction.date }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+        <div class="full-height mx-3 mx-lg-5">
+            <div class="d-flex flex-column justify-content-center text-center align-items-center">
+
+                <div class="row">
+                    <h1 class="name-fancy display-1 fw-bold">Oi {{ name }}</h1>
+                </div>
+
+                <div class="row center">
+                    <form action="/plant" method="get">
+                        <button type="submit" class="btn btn-colored round fw-bold h1">Clique aqui</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+{% endblock %}
